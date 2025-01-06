@@ -1,4 +1,3 @@
-import { section } from 'motion/react-client';
 import { RefObject } from 'react';
 
 function Button({text, ref}: {text: string, ref?: RefObject<HTMLDivElement | null>}) {

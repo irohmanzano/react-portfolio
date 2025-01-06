@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'motion/react';
 
 function Modal({modalData}: {modalData: ModalData}) {

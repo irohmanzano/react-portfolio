@@ -42,7 +42,7 @@ function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
                         <span
                             className="text-2xl"
                         >
-                            Hi, I'm <span style={{color: 'yellow', textShadow: '0 0 16px rgba(255, 255, 0, 0.8)'}}>IROH MANZANO</span><br/>
+                            Hi, I&apos;m <span style={{color: 'yellow', textShadow: '0 0 16px rgba(255, 255, 0, 0.8)'}}>IROH MANZANO</span><br/>
                         </span>
                         <span
                             className="text-4xl"
