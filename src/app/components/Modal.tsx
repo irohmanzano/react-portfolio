@@ -64,8 +64,8 @@ function Modal({modalData}: {modalData: ModalData}) {
         </div>
         <div className='p-14 flex flex-col'>
             <h1 className='text-4xl font-semi mb-8 text-[yellow] leading-tight'>{modalData.title}</h1>
-            <p className='pb-8 mb-8 leading-loose border-b-2'>{modalData.desc}</p>
-            <div className='flex items-center'>
+            <p className='pb-8 mb-8 leading-loose border-b-2 text-justify'>{modalData.desc}</p>
+            <div className='flex items-center flex-wrap'>
                 <p className='mr-2'>Tech stack: </p>
 
                 {modalData.techStack.includes('m') && <><p>MongoDB</p><svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24">

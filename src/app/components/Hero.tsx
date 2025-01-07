@@ -15,7 +15,7 @@ function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
         <>
             <div
                 ref={hero}
-                className="h-screen"
+                className="h-screen bg-slate-950"
                 style={{
                     fontFamily: 'Space Mono, monospace',
                     color: 'white'
@@ -28,9 +28,10 @@ function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
                         backgroundSize: bgZoom,
                         backgroundPosition: 'center'
                     }}
-                >
+                >   
+                    <div className='absolute sm:bg-opacity-0 bg-opacity-60 bg-slate-950 left-0 right-0 top-0 bottom-0' />
                     <div
-                        className="text-center"
+                        className="text-center z-10"
                     >
                         <span
                             className="flex items-center justify-center text-lg"
@@ -50,7 +51,9 @@ function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
                             <span style={{color: 'yellow', textShadow: '0 0 16px rgba(255, 255, 0, 0.8)'}}>Full-Stack Web Developer</span> Specializing in <span style={{color: 'yellow', textShadow: '0 0 16px rgba(255, 255, 0, 0.8)'}}>MERN</span>
                         </span>
                     </div>
-                    <div>
+                    <div
+                        className='z-10'
+                    >
                         <Button text='Blast Off 🚀' ref={ref}/>
                     </div>
                     <span

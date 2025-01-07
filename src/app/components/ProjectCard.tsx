@@ -106,7 +106,7 @@ function ProjectCard({title, desc, itemNo, images, topM, gitLink, modalData, set
             }}
         >
             <motion.div
-                className='flex md:flex-row flex-col h-fit py-8 px-32 bg-slate-950 cursor-pointer'
+                className='flex md:flex-row flex-col h-fit py-8 md:px-32 bg-slate-950 cursor-pointer'
                 style={{
                     top: `${topM}vh`, 
                 }}
@@ -129,7 +129,7 @@ function ProjectCard({title, desc, itemNo, images, topM, gitLink, modalData, set
             >
                 <div>
                     <h1
-                        className="mb-8 text-3xl"
+                        className="mb-8 text-3xl md:text-left text-center"
                     >
                         {title}
                     </h1>
