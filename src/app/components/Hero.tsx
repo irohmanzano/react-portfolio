@@ -1,6 +1,7 @@
 import React, { useRef, RefObject } from 'react'
 import Button from "./Button";
 import { motion, useScroll, useTransform } from "motion/react";
+import SocialLinks from './SocialLinks';
 
 
 function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
@@ -22,7 +23,7 @@ function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
                 }}
             >
                 <motion.div
-                    className="w-full h-full flex flex-col justify-between items-center py-32"
+                    className="w-full h-full flex flex-col justify-between items-center pb-32 pt-24"
                     style={{
                         backgroundImage: 'url(/blackhole.jpg)',
                         backgroundSize: bgZoom,
@@ -50,6 +51,11 @@ function Hero({ref}: {ref: RefObject<HTMLDivElement | null>}) {
                         >
                             <span style={{color: 'yellow', textShadow: '0 0 16px rgba(255, 255, 0, 0.8)'}}>Full-Stack Web Developer</span> Specializing in <span style={{color: 'yellow', textShadow: '0 0 16px rgba(255, 255, 0, 0.8)'}}>MERN</span>
                         </span>
+                        <div
+                            className='z-10'
+                        >
+                            <SocialLinks />
+                        </div>
                     </div>
                     <div
                         className='z-10'
