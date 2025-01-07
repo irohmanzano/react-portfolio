@@ -1,4 +1,4 @@
-import { addScaleCorrector, motion } from 'motion/react'
+import { motion } from 'motion/react'
 
 function SocialLinks() {
     const hoverEffect = {
